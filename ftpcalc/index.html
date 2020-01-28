@@ -1,1 +1,102 @@
-.
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="Style/reset.css">
+    <link type="text/css" rel="stylesheet" href="Style/style.css">
+	<title>Zones!</title>
+</head>
+<body>
+	<div class="page-title">
+		<ul class="navbar">
+			<li id="title-logo"><img src="images/crank.png"></li>
+			<li id="title-text">Mashing The Data</li>
+		</ul>
+	</div>
+<div class="wrapper">
+	<div class="chart">
+		<div>
+			<ul class="chart-header"> 
+				<li class="line-item"><input type="text" placeholder="FTP" id="ftp-input" name="text_name" class="ftp" /></li>
+				<li class="line-item -forButton">
+					<button class="myBtn" onclick="myFunction()">Get Zones</button></li>
+				<li class="line-item -forButton">
+					<button class="myBtn" id="btn-reset" onclick="resetForm()">Reset</button></li>
+				<li class="line-item watts" id="zones-float-right">Watts</li>
+			</ul>
+		</div>
+			<div class="zone-table">	
+				<table>
+					<tr>
+						<td class="zone">Zone 1: Active Recovery</td> 
+						<td id="z1" class="calc"></td>
+					</tr>
+					<tr>
+						<td class="zone">Zone 2: Endurance</td>
+						<td id="z2" class="calc"></td>
+					</tr>
+					<tr>
+						<td class="zone">Zone 3: Tempo</td>
+						<td id="z3" class="calc"></td>
+					</tr>
+					<tr>
+						<td class="zone">Zone 4: Lactate Threshold</td>
+						<td id="z4" class="calc"></td>
+					</tr>
+					<tr>
+						<td class="zone">Zone 5: VO2 Max</td>
+						<td id="z5" class="calc"></td>
+					</tr>
+					<tr>
+						<td class="zone">Zone 6: Anaerobic Capacity</td>
+						<td id="z6" class="calc"></td>
+					</tr>
+				</table>
+			</div>
+	</div>
+</div>
+<div class="wrapper_1">
+	<div class="zone-info">
+		<div class="training-zones">
+			<h1 class="title__title-2">Training Zones</h1>
+		</div>
+		<hr noshade="noshade"/>
+		<div class="row">
+		  <div class="column">
+		    <h2 class="z-info-title">Zone 1: Active Recovery</h2>
+		    <p>"Easy spinning" or "light pedal pressure", i.e., very low level exercise, too low in and of itself to induce significant physiological adaptations. Minimal sensation of leg effort/fatigue. Requires no concentration to maintain pace, and continuous conversation possible. Typically used for active recovery after strenuous training days (or races), between interval efforts, or for socializing.</p>
+		  </div>
+		  <div class="column">
+		    <h2 class="z-info-title">Zone 2: Endurance</h2>
+		    <p>"All day" pace, or classic long slow distance (LSD) training. Sensation of leg effort/fatigue generally low, but may rise periodically to higher levels (e.g., when climbing). Concentration generally required to maintain effort only at highest end of range and/or during longer training sessions. Breathing is more regular than at level 1, but continuous conversation still possible. Frequent (daily) training sessions of moderate duration (e.g., 2 h) at level 2 possible (provided dietary carbohydrate intake is adequate), but complete recovery from very long workouts may take more than 24 hs.
+			</p>
+		  </div>
+		  <div class="column">
+		    <h2 class="z-info-title">Zone 3: Tempo</h2>
+		    <p>Typical intensity of fartlek workout, 'spirited' group ride, or briskly moving paceline. More frequent/greater sensation of leg effort/fatigue than at level 2. Requires concentration to maintain alone, especially at upper end of range, to prevent effort from falling back to level 2. Breathing deeper and more rhythmic than level 2, such that any conversation must be somewhat halting, but not as difficult as at level 4. Recovery from level 3 training sessions more difficult than after level 2 workouts, but consecutive days of level 3 training still possible if duration is not excessive and dietary carbohydrate intake is adequate.</p>
+		  </div>
+		  <div class="column">
+		    <h2 class="z-info-title">Zone 4: Active Recovery</h2>
+		    <p>"Easy spinning" or "light pedal pressure", i.e., very low level exercise, too low in and of itself to induce significant physiological adaptations. Minimal sensation of leg effort/fatigue. Requires no concentration to maintain pace, and continuous conversation possible. Typically used for active recovery after strenuous training days (or races), between interval efforts, or for socializing.</p>
+		  </div>
+		  <div class="column">
+		    <h2 class="z-info-title">Zone 5: Endurance</h2>
+		    <p>"All day" pace, or classic long slow distance (LSD) training. Sensation of leg effort/fatigue generally low, but may rise periodically to higher levels (e.g., when climbing). Concentration generally required to maintain effort only at highest end of range and/or during longer training sessions. Breathing is more regular than at level 1, but continuous conversation still possible. Frequent (daily) training sessions of moderate duration (e.g., 2 h) at level 2 possible (provided dietary carbohydrate intake is adequate), but complete recovery from very long workouts may take more than 24 hs.
+			</p>
+		  </div>
+		  <div class="column">
+		    <h2 class="z-info-title">Zone 6: Tempo</h2>
+		    <p>Typical intensity of fartlek workout, 'spirited' group ride, or briskly moving paceline. More frequent/greater sensation of leg effort/fatigue than at level 2. Requires concentration to maintain alone, especially at upper end of range, to prevent effort from falling back to level 2. Breathing deeper and more rhythmic than level 2, such that any conversation must be somewhat halting, but not as difficult as at level 4. Recovery from level 3 training sessions more difficult than after level 2 workouts, but consecutive days of level 3 training still possible if duration is not excessive and dietary carbohydrate intake is adequate.</p>
+		  </div>
+		</div>
+	</div>
+</div>
+<footer>
+Power Zones by Andrew Coggan, Ph.D.
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
